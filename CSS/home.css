@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: #FFF2E9;
+}
+
+@font-face {
+    font-family: nvb;
+    src: url(/font/nvb.TTF);
+ }
+
+ @font-face {
+    font-family: natron;
+    src: url(/font/natron.otf);
+ }
+ 
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr, 1fr ;
+    grid-template-columns: 1fr, 1fr ;
+}
+
+.header {
+    font-size: 85px;
+    font-family: nvb;
+    text-align: center;
+    color: #6B705C;
+    padding-top: 8%;
+}
+
+/*-------------------- dropdown -------------------*/
+
+.library-dropdown{
+    min-width: 15em;
+    position:relative;
+    font-family: natron;
+    font-size: 25px;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+}
+
+.select {
+    background: #CB997E;
+    color: #FFF2E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #CB997E solid;
+    border-radius: 1em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 40px;
+}
+
+.select-clicked {
+    border: 2px #cdae9a solid;
+    box-shadow: 0 0 0.8 #cdae9a
+}
+
+.select:hover {
+    background: #ba8c74;
+}
+
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    text-align: center;
+    background: #DDBEA9;
+    border: 1px solid;
+    box-shadow: 0 0.5em  1em rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    color: #FFF2E9;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #cdae9a;
+}
+
+/*added in javascript*/
+.menu-open {
+    display: block;
+    opacity: 1;
+}
