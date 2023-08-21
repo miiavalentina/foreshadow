@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <link rel="icon" type="image/x-icon" href="../imgs/pixelstar.png" />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="/CSS/home.css">
-    <link rel="icon" type="image/x-icon" href="/imgs/pixelstar.png">
-</head>
-
-<body>
-<div class="container">
-<div class="header">foreshadow</div>
-
-<div class="library-dropdown">
-    <div class="select">
-        <span class="selected">LIBRARY</span>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="main-heading">foreshadow</h1>
+        <div class="dropdown">
+          <button
+            id="dropdown-button"
+            onclick="toggleMenu()"
+            class="dropdown-button"
+          >
+            LIBRARY
+          </button>
+          <div id="dropdown-menu" class="dropdown-content">
+            <a href="#calendar">ʚ kalendar ɞ</a>
+            <a href="#kanban">ʚ kanban ɞ</a>
+            <a href="#focus">ʚ study focus ɞ</a>
+            <a href="#clock">ʚ world clock ɞ</a>
+            <a href="#login">ʚ register / log-in ɞ</a>
+          </div>
+        </div>
+      </header>
     </div>
-    <ul class="menu">
-        <li>ʚ kalendar ɞ</li>
-        <li>ʚ kanban ɞ</li>
-        <li>ʚ study focus ɞ</li>
-        <li>ʚ world clock ɞ</li>
-        <li>ʚ register / log-in ɞ</li>
-    </ul>
-</div>
 
-
-
-
-</div>
-</body>
-
+    <script src="../JS/home.js"></script>
+  </body>
 </html>
