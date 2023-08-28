@@ -17,6 +17,7 @@ body {
 
 .main-heading {
   margin: 60px;
+  margin-top: 120px;
   font-size: 85px;
   font-family: nvb;
   color: #6b705c;
@@ -39,19 +40,20 @@ header {
 .dropdown {
   position: relative;
   display: block;
-  min-width: 400px;
+  min-width: 700px;
 }
 
 .dropdown-button {
   background-color: #cb997e;
   color: #fff2e9;
-  padding: 28px;
+  padding: 15px;
   font-size: 50px;
   border: none;
-  border-radius: 45px;
+  border-radius: 35px;
   cursor: pointer;
   width: 100%;
   font-family: natron;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2); /* This adds the shadow */
 }
 
 .dropdown-button.active {

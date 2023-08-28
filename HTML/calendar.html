@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Calendar</title> 
+    <link rel="stylesheet" href="../CSS/calendar.css" />
+    <link rel="icon" type="image/x-icon" href="../imgs/pixelstar.png" />
+  </head>
+
+
+  <body>
+    
+    <div id="container">
+
+        <div id="header">
+          <div id = "monthDisplay"></div>
+          <div>
+            <button id = "backButton"> Back </button>
+            <button id = "nextButton"> Next </button>
+          </div>
+        </div>
+
+        <div id="weekdays">
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+            <div>Sunday</div>
+        </div>
+
+        <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2> New Event</h2>
+
+      <input id="eventTitleInput" placeholder="Add an Event...  ">
+
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+
+    <!-- Absolute positions -->
+    <div id ="modalBackDrop"> </div> <!-- used as back overlay-->
+
+    <script src="../JS/calendar.js"></script>
+  </body>
+
+</html>
