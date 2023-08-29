@@ -4,6 +4,7 @@ let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('e
 
 const calendar = document.getElementById('calendar');  
 const newEventModal = document.getElementById('newEventModal'); 
+const deleteEventModal = document.getElementById('deleteEventModal');
 const backDrop = document.getElementById('modalBackDrop');     
 const eventTitleInput = document.getElementById ('eventTitleInput'); /* clear cancelled text on event */
 const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -14,7 +15,8 @@ function openModal(date) {
     const eventForDay = events.find(e => e.date == clicked);
 
     if (eventForDay) {
-        console.log('Event already exists');
+        document.getElementById('eventText').innerText = eventForDay.title;
+        deleteEventModal.style.display = 'block';
     }
 
     else {
@@ -81,9 +83,11 @@ function load() {
     }
 }
 
+
 function closeModal() {
     eventTitleInput.classList.remove('error') //clear error before closing modal
     newEventModal.style.display = 'none';
+    deleteEventModal.style.display = 'none';
     backDrop.style.display = 'none';
     eventTitleInput.value='';
     clicked = null;
@@ -109,6 +113,13 @@ function saveEvent() {
 }
 
 
+function deleteEvent() {
+    events = events.filter(e => e.date !== clicked);  /*Basically like deleting it from the array*/
+    localStorage.setItem('events', JSON.stringify(events)); /*reset it in local storage*/
+    closeModal();
+}
+
+
 function initButtons () {
     document.getElementById('nextButton').addEventListener('click', () => {
         nav++; /*increment value*/
@@ -121,8 +132,10 @@ function initButtons () {
     });
 
     document.getElementById('saveButton').addEventListener('click', saveEvent);
-
     document.getElementById('cancelButton').addEventListener('click', closeModal);
+
+    document.getElementById('deleteButton').addEventListener('click', deleteEvent);
+    document.getElementById('closeButton').addEventListener('click', closeModal);
 }
 
 
