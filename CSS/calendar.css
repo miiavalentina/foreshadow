@@ -15,19 +15,62 @@ body {
     src: url(../font/natron.otf);
   }
 
+  a {
+    color: #626254;
+    text-decoration: none;
+  }
+
+  #navbar {
+    font-family: nvb;
+    color: #626254;
+    font-size: 40px;
+    padding: 0%;
+    position: absolute;
+    top: 3.6%;
+    left: 3.5%;
+  }
+
+  #library-button {
+    width: 140px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #FFF2E9;
+    background-color: #CB997E;
+    font-family: natron;
+    font-size: 28px;
+    height: 44px;
+    position: absolute;
+    top: 1.8%;
+    right: 3.5%;
+  }
+
     button {
     width: 65px;
     cursor: pointer;
     box-shadow: 0px 0px 2px gray;
     border: none;
     outline: none;
-    padding: 8px;
-    border-radius: 10px;
+    border-radius: 15px;
     color: #FFF2E9;
     font-family: natron;
     font-size: 20px;
+    height: 50px;
+    margin-top: 15px;
   }
 
+  #backButton {
+    background-color: #CB997E;
+    margin-right: 2%;
+  }
+
+  #nextButton {
+    background-color: #CB997E;
+    margin-left: 2%;
+  }
+  
   
   #header {
     padding: 10px;
@@ -36,14 +79,12 @@ body {
     font-family: natron;
     display: flex;
     justify-content: center;
+    text-decoration: underline overline #CB997E;
   }
 
-  #header button {
-    background-color:#CB997E;
-  }
 
   #container {
-    width: 770px;
+    width: 870px;
   }
   
   #weekdays {
@@ -51,12 +92,13 @@ body {
     display: flex;
     color: #B7B7A4;
     font-family: natron;
-    font-size: 20px;
+    font-size: 20px; 
   }
 
   #weekdays div {
     width: 100px;
-    padding: 10px;
+    padding: 25px;
+    padding-left: 30px;
   }
 
   #calendar {
@@ -67,13 +109,14 @@ body {
   }
 
   .day {
+    color:  #FFF2E9;
     width: 100px;
     padding: 10px;
     height: 100px;
     cursor: pointer;
     box-sizing: border-box;
     background-color: #B7B7A4;
-    margin: 10px;
+    margin: 12px;
     box-shadow: 0px 0px 3px #CBD4C2;
     display: flex;
     flex-direction: column;
@@ -109,31 +152,34 @@ body {
 
   #newEventModal, #deleteEventModal {
     display: none;
-    z-index: 20;
-    padding: 25px;
-    background-color: #e8f4fa;
-    box-shadow: 0px 0px 3px black;
-    border-radius: 5px;
+    z-index: 30;
+    padding: 20px;
+    background-color: #ffecde;
+    box-shadow: 0px 0px 3px rgb(71, 71, 71);
+    border-radius: 20px;
     width: 350px;
-    top: 100px;
+    top: 25%;
     left: calc(50% - 175px);
     position: absolute;
-    font-family: sans-serif;
+    font-family: natron;
+    font-size: 25px;
+    text-align: center;
+    color:#CB997E;
   }
 
   #eventTitleInput {
-    padding: 10px;
+    padding: 15px;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 25px;
-    border-radius: 3px;
+    border-radius: 10px;
     outline: none;
     border: none;
     box-shadow: 0px 0px 3px gray;
   }
 
   #eventTitleInput.error {
-    border: 2px solid red;
+    border: 2px solid  #d36c6c;
   }
 
   #cancelButton, #deleteButton {
@@ -141,11 +187,13 @@ body {
   }
 
   #saveButton, #closeButton {
-    background-color: #92a1d1;
+    background-color: #626254;
   }
 
   #eventText {
-    font-size: 14px;
+    font-size: 25px;
+    text-align: center;
+    color: #626254;
   }
   
   #modalBackDrop {
