@@ -1,7 +1,6 @@
 body {
   margin: 0;
   background-color: #fff2e9;
-
 }
 
 /*-------------------- typography -------------------*/
@@ -25,144 +24,15 @@ body {
 }
 
 .container {
-  width: 780px;
-  margin: 0 auto;
-  position: relative;
+  height: 100dvh;
+  background-image: url(../imgs/background-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-/*-------------------- background text -------------------*/
-
-#kanban1 {
-  z-index: -1;
-  color: #FFE4D1;
-  font-family: natron;
-  font-size: 110px;
-  position: absolute;
-  top: -15%;
-  bottom: 0%;
-  left: -14%;
-  right: 0%;
-}
-
-#kanban2 {
-  position: absolute;
-  z-index: -1;
-  color: #FFE4D1;
-  font-family: natron;
-  font-size: 300px;
-  -webkit-text-stroke: 4.7px #FFE4D1;
-  color: transparent; 
-
-  top: 170%;
-  bottom: 0%;
-  left: -37%;
-  right: 0%;
-}
-
-#study1 {
-  position: absolute;
-  z-index: -1;
-
-  font-family: natron;
-  font-size: 250px;
-  -webkit-text-stroke: 4.7px #FFE4D1;
-  color: transparent; 
-
-  top: 4%;
-  bottom: 0%;
-  left: -74%;
-  right: 0%;
-}
-
-#study2 {
-  position: absolute;
-  z-index: -1;
-  color: #FFE4D1;
-  font-family: natron;
-  font-size: 150px;
-
-  top: 75%;
-  bottom: 0%;
-  left: -67%;
-  right: 0%;
-}
-
-#study3 {
-  position: absolute;
-  z-index: -1;
-  font-family: natron;
-  font-size: 300px;
-  -webkit-text-stroke: 4.7px #FFE4D1;
-  color: transparent; 
-
-  top: 180%;  
-  right: -60%;
-}
-
-#worldclock1 {
-  position: absolute;
-  z-index: -1;
-  color: #FFE4D1;
-  font-family: natron;
-  font-size: 110px;
-
-  top: 140%;
-  bottom: 0%;
-  left: -67%;
-  right: 0%;
-}
-
-#worldclock2 {
-  position: absolute;
-  z-index: -1;
-  color: #FFE4D1;
-  font-family: natron;
-  font-size: 200px;
-
-  top: 127%;  
-  right: -80%;
-}
-
-#calendar1 {
-  position: absolute;
-  z-index: -1;
-  color: #FFE4D1;
-  font-family: natron;
-  font-size: 200px;
-
-  left: -75%;
-  top: 227%;  
-}
-
-#calendar2 {
-  position: absolute;
-  z-index: -1;
-
-  font-family: natron;
-  font-size: 200px;
-  -webkit-text-stroke: 4.7px #FFE4D1;
-  color: transparent; 
-  
-  top: 30%;  
-  right: -80%;
-}
-
-#calendar3 {
-  position: absolute;
-  z-index: -1;
-  color: #FFE4D1;
-  font-family: natron; 
-  font-size: 200px;
-
-  top: -28%;  
-  right: -58%;
-}
-
-
-
-
 
 /*-------------------- header -------------------*/
+
 header {
   display: flex;
   flex-direction: column;
