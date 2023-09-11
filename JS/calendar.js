@@ -67,7 +67,7 @@ function load() {
             if (eventForDay) {
                 const eventDiv = document.createElement('div');
                 eventDiv.classList.add('event');
-                eventDiv.innerText = eventForDay.titles;
+                eventDiv.innerText = eventForDay.title;
                 daySquare.appendChild(eventDiv);
             }
 
